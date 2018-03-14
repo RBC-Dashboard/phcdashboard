@@ -1,0 +1,41 @@
+{
+  "dashlets": [
+    {
+      "id": "1",
+      "title": "Percent of Infants who are HIV-free by 18 months",
+      "link": "https://dhis2.jsi.com/dss/api/maps/qNJbH7bqRts/data",
+      "exploreLink": "https://dhis2.jsi.com/dss/dhis-web-mapping/index.html?id=qNJbH7bqRts",
+      "chartType": "line"
+    },
+    {
+      "id": "3",
+      "title": "Number of infants receiving ART",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:psFkwmlxKjI&dimension=pe\\:LAST_4_QUARTERS&filter=ou\\:LEVEL-1",
+      "chartType": "line"
+    },
+    {
+      "id": "4",
+      "title": "Percent of viral load suppression after 12 months on treatment",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:flj6nKxKhf4;XWegCdrhuWn&dimension=pe\\:LAST_5_YEARS&filter=ou\\:LEVEL-1",
+      "chartType": "Bar"
+    },
+    {
+      "id": "2",
+      "title": "Prportion of new positives from testing",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:qcDuvv8bUNf;hDBEi2bF6nS&dimension=pe\\:LAST_5_YEARS&filter=ou\\:LEVEL-1",
+      "chartType": "bar"
+    },
+    {
+      "id": "5",
+      "title": "PMTCT Cascase",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:UipQPqzl8JJ;LwWTBPXHfFR;VfzC8s6TUrs&dimension=pe\\:LAST_12_MONTHS&filter=ou\\:LEVEL-1",
+      "chartType": "bar"
+    },
+    {
+      "id": "6",
+      "title": "HIV Care cascade",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:ofagyDoyQA2&dimension=pe\\:LAST_12_MONTHS&filter=ou\\:LEVEL-1",
+      "chartType": "Bar"
+    }
+  ]
+}

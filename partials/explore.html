@@ -1,0 +1,71 @@
+<div class="container-fluid">
+    <!--<ng-include src="'partials/nationalalerts.html'"></ng-include>-->
+    <!--<div ng-include="getInclude()"></div>-->
+    <div ng-controller="exploreController">
+
+        <ng-include src="'partials/nationalalerts.html'"></ng-include>
+        <div class="row">
+            <div class="col-md-12 alert-bar-join">
+                <div class="title-bar">
+                    <h4>{{phctitle}}</h4>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-3">
+                <select class="form-control" ng-model="selectedLevel.level" ng-change="update()"
+                        ng-options="ouLvl.level as ouLvl.displayName for ouLvl in orgLevels | filter: filterLevels">
+                </select>
+            </div>
+            <div class="col-md-9">
+                <select class="form-control" ng-change="viewChart(selectedLevel.level, defaultOrgUnit.id)"
+                        ng-if="selectedLevel.level != '1' && selectedLevel.level != '3'" ng-model="defaultOrgUnit.id"
+                        ng-options="orgUnitChild.id as orgUnitChild.displayName for orgUnitChild in orgUnitsChildren">
+                </select>
+            </div>
+            <!--<div class="col-md-3"></div>
+            <div class="col-md-3">
+                <button id="View_Chart" type="button" class="btn btn-primary" ng-click="viewChart(selectedLevel.level, defaultOrgUnit.id)">View Chart</button>
+            </div>-->
+        </div>
+        <!--Drilldown graph presented here-->
+        <div class="row">
+            <div class="col-md-12">
+                <div id="graphx0" class="col-md-12 panel panel-default scroll"></div>
+            </div>
+        </div>
+        <!--Best and worst perforrming tables begins here-->
+        <div class="row">
+            <div class="col-md-6">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th colspan="2" align="center">Best Performing Districts</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="rows in worstDistricts">
+                        <td ng-repeat="row in rows">{{row}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th colspan="2" align="center">Worst Performing Districts</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="rows in bestDistricts">
+                        <td ng-repeat="row in rows">{{row}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+{
+  "dashlets": [
+    {
+      "id": "1",
+      "title": "Proportion of HIV+ cases given antiretrovial therapy during TB treatment (IMHIGO)",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:lBwHq99UNwD;Cyai2ELIIB7;kkAUgKEL5Y7&dimension=pe\\:LAST_YEAR&filter=ou\\:LEVEL-1",
+      "chartType": "map"
+    },
+    {
+      "id": "2",
+      "title": "MDR-TB treatment: proportion of bacteriologically confirmed Rifampicin Resistant (RR)-MDR-TB cases who have a negative culture at the end of six month of second line treatment",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:rlL15PvDkYy;AuGkfbrEpZQ;fDa1Y18ms5Y;SYRGn8IWKRR;CWSvQRgvCe3&dimension=pe\\:LAST_YEAR&filter=ou\\:LEVEL-1",
+      "chartType": "map"
+    },
+    {
+      "id": "3",
+      "title": "    Proportion of HIV+ cases given antiretrovial therapy during TB treatment [IMHIGO]",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:svj927QZPsK&dimension=pe\\:LAST_12_MONTHS&filter=ou\\:LEVEL-1",
+      "chartType": "line"
+    },
+    {
+      "id": "4",
+      "title": "MDR-TB treatment: proportion of bacteriologically confirmed Rifampicin Resistant (RR)-MDR-TB cases who have a negative culture at the end of six month of second line treatment",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:CkZemJwCjaY;lzTZpvSOhpa;B5we1J65yM0;IICFRxhEnPP;S8R92L050Ic;h3Xq3ahEYXY;QrKPP3xvosw;VB9QcuqSwnW;zAFNP5XTkuI&dimension=pe\\:LAST_12_MONTHS&filter=ou\\:LEVEL-3",
+      "chartType": "Line"
+    }
+  ]
+}
+

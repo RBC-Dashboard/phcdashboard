@@ -1,0 +1,41 @@
+{
+  "dashlets": [
+    {
+      "id": "1",
+      "title": "Vaccine statusat district level - traditional",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:CkZemJwCjaY;lzTZpvSOhpa;B5we1J65yM0;IICFRxhEnPP;S8R92L050Ic;h3Xq3ahEYXY;QrKPP3xvosw;VB9QcuqSwnW;zAFNP5XTkuI;y0B9TaG5LG7;r3xRSOos9g0;WUSUbdHGWZ4&dimension=ou\\:LEVEL-3&filter=pe\\:LAST_QUARTER",
+      "chartType": "table"
+    },
+    {
+      "id": "2",
+      "title": "Percent of districts with shortage of traditional vaccines",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:psFkwmlxKjI&dimension=pe\\:LAST_4_QUARTERS&filter=ou\\:LEVEL-1",
+      "chartType": "bar"
+    },
+    {
+      "id": "3",
+      "title": "Stock level for vaccines",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:psFkwmlxKjI&dimension=pe\\:LAST_4_QUARTERS&filter=ou\\:LEVEL-1",
+      "chartType": "map"
+    },
+    {
+      "id": "4",
+      "title": "Vaccine status at district level",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:CkZemJwCjaY;lzTZpvSOhpa;B5we1J65yM0;IICFRxhEnPP;S8R92L050Ic;h3Xq3ahEYXY;QrKPP3xvosw;VB9QcuqSwnW;zAFNP5XTkuI;y0B9TaG5LG7;r3xRSOos9g0;WUSUbdHGWZ4&dimension=ou\\:LEVEL-3&filter=pe\\:LAST_QUARTER",
+      "chartType": "table"
+    },
+    {
+      "id": "5",
+      "title": "Number of months remaining at MPPD national warehouse",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:wOVeaoBHxk7&dimension=pe\\:LAST_YEAR&filter=ou\\:LEVEL-1",
+      "chartType": "bar"
+    },
+    {
+      "id": "6",
+      "title": "Vaccine status at national level",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:Ok2G7kDN3oI;FkxCuH5DGrA&dimension=pe\\:THIS_MONTH&filter=ou\\:LEVEL-1",
+      "chartType": "table"
+    }
+  ]
+}
+

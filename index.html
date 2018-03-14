@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html ng-app="rbcapp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RBC Dashboards</title>
+    <!-- Core CSS - Include with every page -->
+    <link href="assets/plugins/bootstrap/bootstrap.css" rel="stylesheet"/>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet"/>
+    <link href="assets/plugins/pace/pace-theme-big-counter.css" rel="stylesheet"/>
+    <link href="assets/css/style.css" rel="stylesheet"/>
+    <link href="assets/css/main-style.css" rel="stylesheet"/>
+    <!-- Page-Level CSS -->
+    <link href="assets/plugins/morris/morris-0.4.3.min.css" rel="stylesheet"/>
+</head>
+<body>
+<!--  wrapper -->
+<div id="wrapper">
+    <!-- navbar top -->
+    <nav class="navbar-fixed-top" role="navigation">
+
+        <!-- navbar-header -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="sidebar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- end navbar-header -->
+    </nav>
+    <!-- end navbar top -->
+
+    <!-- navbar side -->
+    <nav class="navbar-static-side" role="navigation">
+        <!-- sidebar-collapse -->
+        <div class="sidebar-collapse">
+            <!-- side-menu -->
+            <ul class="nav" id="side-menu">
+                <li>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/Picture2.png" alt="" class="img-responsive img-rounded" height="auto"/>
+                        <img src="assets/img/Picture1.png" alt="" class="img-responsive img-rounded" height="auto"/>
+                    </a>
+                    <div style="clear:left"/>
+                </li>
+                <li class="dboard-level1">
+                    <a href="#"><span class="dboard-dashboard"></span> Integrated PHC<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level dboard-level2">
+                        <li>
+                            <a href="#/phc_system/PHC_SYSTEM"><span class="dboard-system"></span> System</a>
+                        </li>
+                        <li>
+                            <a href="#/phc_input/PHC_INPUTS"><span class="dboard-input"></span> Input </a>
+                        </li>
+                        <li>
+                            <a href="#/phc_service/PHC_SERVICE_DELIVERY"><span class="dboard-service-delivery"></span>
+                                Service Delivery</a>
+                        </li>
+                        <li>
+                            <a href="#/phc_coverage/PHC_COVERAGE"><span class="dboard-coverage"></span> Coverage</a>
+                        </li>
+                        <li>
+                            <a href="#/phc_outcomes/PHC_OUTCOMES"><span class="dboard-outcomes"></span> Outcomes</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dboard-level1">
+                    <a href="#"> <span class="dboard-dashboard"></span> MOH Directorates<span
+                            class="fa arrow"></span></a>
+                    <!-- <ul class="nav nav-second-level dboard-level2">
+                        <li>
+                            <a href="#/moh_system/MOH_SYSTEM"><span class="dboard-system"></span> System</a>
+                        </li>
+                        <li>
+                           <a href="#/moh_input/MOH_INPUTS"><span class="dboard-input"></span> Input </a>
+                        </li>
+                        <li>
+                            <a href="#/moh_service/MOH_SERVICE_DELIVERY"><span class="dboard-service-delivery"></span> Service Delivery</a>
+                        </li>
+                        <li>
+                            <a href="#/moh_coverage/MOH_COVERAGE"><span class="dboard-coverage"></span> Coverage</a>
+                        </li>
+                        <li>
+                            <a href="#/moh_outcomes/MOH_OUTCOMES"><span class="dboard-outcomes"></span> Outcomes</a>
+                        </li>
+                    </ul>
+                    <!-- second-level-items -->
+                </li>
+                <li class="dboard-level1" id="ihpdc_menu">
+                    <a href="#"><span class="dboard-dashboard"></span> IHPDC<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level dboard-level2">
+                        <li>
+                            <!-- HIV menu -->
+                            <a href="#"><span class="dboard-dashboard"></span> HIV<span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level dboard-level3">
+                                <li>
+                                    <a href="#/ihpdc_hiv_system/IHPDC_HIV_SYSTEM"><span class="dboard-system"></span>
+                                        System</a>
+                                </li>
+                                <li>
+                                    <a href="#/ihpdc_hiv_input/IHPDC_HIV_INPUTS"><span class="dboard-input"></span>
+                                        Input </a>
+                                </li>
+                                <li>
+                                    <a href="#/ihpdc_hiv_service/IHPDC_HIV_SERVICE_DELIVERY"><span
+                                            class="dboard-service-delivery"></span> Service Delivery</a>
+                                </li>
+                                <li>
+                                    <a href="#/ihpdc_hiv_coverage/IHPDC_HIV_COVERAGE"><span
+                                            class="dboard-coverage"></span> Coverage</a>
+                                </li>
+                                <li>
+                                    <a href="#/ihpdc_hiv_outcomes/IHPDC_HIV_OUTCOMES"><span
+                                            class="dboard-outcomes"></span> Outcomes</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dboard-level2">
+                            <a href="#"><span class="dboard-dashboard"></span> Malaria<span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level dboard-level3">
+                                <li>
+                                    <a href="#/ihpdc_malaria_system/IHPDC_MALARIA_SYSTEM"><span
+                                            class="dboard-system"></span> System</a>
+                                </li>
+                                <li>
+                                    <a href="#/ihpdc_malaria_input/IHPDC_MALRIA_INPUTS"><span
+                                            class="dboard-input"></span> Input </a>
+                                </li>
+                                <li>
+                                    <a href="#/ihpdc_malaria_service/IHPDC_MALRIA_SERVICE_DELIVERY"><span
+                                            class="dboard-service-delivery"></span> Service Delivery</a>
+                                </li>
+                                <li>
+                                    <a href="#/ihpdc_malaria_coverage/IHPDC_MALRIA_COVERAGE"><span
+                                            class="dboard-coverage"></span> Coverage</a>
+                                </li>
+                                <li>
+                                    <a href="#/ihpdc_malaria_outcomes/IHPDC_MALRIA_OUTCOMES"><span
+                                            class="dboard-outcomes"></span> Outcomes</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dboard-level2">
+                            <a href="#"><span class="dboard-dashboard"></span> MCH – EPI<span
+                                    class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level dboard-level3">
+                                <li>
+                                    <a href="#/ihpdc_mchepi_system/IHPDC_MCHEPI_SYSTEM"><span
+                                            class="dboard-system"></span> System</a>
+                                </li>
+                                <li>
+                                    <a href="#/ihpdc_mchepi_input/IHPDC_MCHEPI_INPUTS"><span
+                                            class="dboard-input"></span> Input </a>
+                                </li>
+                                <li>
+                                    <a href="#/ihpdc_mchepi_service/IHPDC_MCHEPI_SERVICE_DELIVERY"><span
+                                            class="dboard-service-delivery"></span> Service Delivery</a>
+                                </li>
+                                <li>
+                                    <a href="#/ihpdc_mchepi_coverage/IHPDC_MCHEPI_COVERAGE"><span
+                                            class="dboard-coverage"></span> Coverage</a>
+                                </li>
+                                <li>
+                                    <a href="#/ihpdc_mchepi_outcomes/IHPDC_MCHEPI_OUTCOMES"><span
+                                            class="dboard-outcomes"></span> Outcomes</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dboard-level2">
+                            <a href="#"><span class="dboard-dashboard"></span> TB<span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level dboard-level3">
+                                <li>
+                                    <a href="#/ihpdc_tb_system/IHPDC_TB_SYSTEM"><span class="dboard-system"></span>
+                                        System</a>
+                                </li>
+                                <li>
+                                    <a href="#/ihpdc_tb_input/IHPDC_TB_INPUTS"><span class="dboard-input"></span> Input
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#/ihpdc_tb_service/IHPDC_TB_SERVICE_DELIVERY"><span
+                                            class="dboard-service-delivery"></span> Service Delivery</a>
+                                </li>
+                                <li>
+                                    <a href="#/ihpdc_tb_coverage/IHPDC_TB_COVERAGE"><span
+                                            class="dboard-coverage"></span> Coverage</a>
+                                </li>
+                                <li>
+                                    <a href="#/ihpdc_tb_outcomes/IHPDC_TB_OUTCOMES"><span
+                                            class="dboard-outcomes"></span> Outcomes</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <!-- second-level-items -->
+                </li>
+                <li class="dboard-level1">
+                    <a href="#"><span class="dboard-dashboard"></span> BIOS<span class="fa arrow"></span></a>
+                    <!-- BIOS sub-menu
+                    <ul class="nav nav-second-level dboard-level2">
+                        <li>
+                            <a href="#/bios_system/BIOS_SYSTEM"><span class="dboard-system"></span> System</a>
+                        </li>
+                        <li>
+                           <a href="#/bios_input/BIOS_INPUTS"><span class="dboard-input"></span> Input </a>
+                       </li>
+                       <li>
+                            <a href="#/bios_service/BIOS_SERVICE_DELIVERY"><span class="dboard-service-delivery"></span> Service Delivery</a>
+                        </li>
+                        <li>
+                            <a href="#/bios_coverage/BIOS_COVERAGE"><span class="dboard-coverage"></span> Coverage</a>
+                        </li>
+                        <li>
+                            <a href="#/bios_outcomes/BIOS_OUTCOMES"><span class="dboard-outcomes"></span> Outcomes</a>
+                        </li>
+                    </ul>
+                    <!-- second-level-items -->
+                </li>
+                <li class="dboard-level1">
+                    <a href="#"><span class="dboard-dashboard"></span> SPIU & Corp Services<span
+                            class="fa arrow"></span></a>
+                    <!-- SPIU sub-menu
+                    <ul class="nav nav-second-level dboard-level2">
+                        <li>
+                            <a href="#/spiu_system/SPIU_SYSTEM"><span class="dboard-system"></span> System</a>
+                        </li>
+                        <li>
+                           <a href="#/spiu_input/SPIU_INPUTS"><span class="dboard-input"></span> Input </a>
+                       </li>
+                       <li>
+                            <a href="#/spiu_service/SPIU_SERVICE_DELIVERY"><span class="dboard-service-delivery"></span> Service Delivery</a>
+                        </li>
+                        <li>
+                            <a href="#/spiu_coverage/SPIU_COVERAGE"><span class="dboard-coverage"></span> Coverage</a>
+                        </li>
+                        <li>
+                            <a href="#/spiu_outcomes/SPIU_OUTCOMES"><span class="dboard-outcomes"></span> Outcomes</a>
+                        </li>
+                    </ul>
+                    <!-- second-level-items -->
+                </li>
+                <li class="dboard-level1">
+                    <a href="#"><span class="dboard-dashboard"></span> MPPD<span class="fa arrow"></span></a>
+                    <!-- MPPD Sub-menu
+                    <ul class="nav nav-second-level dboard-level2">
+                        <li>
+                            <a href="#/mppd_system/MPPD_SYSTEM"><span class="dboard-system"></span> System</a>
+                        </li>
+                        <li>
+                           <a href="#/mppd_input/MPPD_INPUTS"><span class="dboard-input"></span> Input </a>
+                       </li>
+                       <li>
+                            <a href="#/mppd_service/MPPD_SERVICE_DELIVERY"><span class="dboard-service-delivery"></span> Service Delivery</a>
+                        </li>
+                        <li>
+                            <a href="#/mppd_coverage/MPPD_COVERAGE"><span class="dboard-coverage"></span> Coverage</a>
+                        </li>
+                        <li>
+                            <a href="#/mppd_outcomes/MPPD_OUTCOMES"><span class="dboard-outcomes"></span> Outcomes</a>
+                        </li>
+
+                    </ul>
+                    <!-- second-level-items -->
+                </li>
+                <li class="dboard-level1">
+                    <a href="#"><span class="dboard-dashboard"></span> RHCC<span class="fa arrow"></span></a>
+                    <!-- RHCC menu
+                    <ul class="nav nav-second-level dboard-level2">
+                         <li>
+                            <a href="#/rhcc_system/RHCC_SYSTEM"><span class="dboard-system"></span> System</a>
+                        </li>
+                        <li>
+                           <a href="#/rhcc_input/RHCC_INPUTS"><span class="dboard-input"></span> Input </a>
+                       </li>
+                       <li>
+                            <a href="#/rhcc_service/RHCC_SERVICE_DELIVERY"><span class="dboard-service-delivery"></span> Service Delivery</a>
+                        </li>
+                        <li>
+                            <a href="#/rhcc_coverage/RHCC_COVERAGE"><span class="dboard-coverage"></span> Coverage</a>
+                        </li>
+                        <li>
+                            <a href="#/rhcc_outcomes/RHCC_OUTCOMES"><span class="dboard-outcomes"></span> Outcomes</a>
+                        </li>
+                    </ul>
+                    <!-- second-level-items -->
+                </li>
+                <li class="dboard-level1">
+                    <a href="#"><span class="dboard-dashboard"></span> MRC<span class="fa arrow"></span></a>
+                    <!-- MRC sub-menu
+                    <ul class="nav nav-second-level dboard-level2">
+                        <li>
+                            <a href="#/mrc_system/MRC_SYSTEM"><span class="dboard-system"></span> System</a>
+                        </li>
+                        <li>
+                           <a href="#/mrc_input/MRC_INPUTS"><span class="dboard-input"></span> Input </a>
+                       </li>
+                       <li>
+                            <a href="#/mrc_service/MRC_SERVICE_DELIVERY"><span class="dboard-service-delivery"></span> Service Delivery</a>
+                        </li>
+                        <li>
+                            <a href="#/mrc_coverage/MRC_COVERAGE"><span class="dboard-coverage"></span> Coverage</a>
+                        </li>
+                        <li>
+                            <a href="#/mrc_outcomes/MRC_OUTCOMES"><span class="dboard-outcomes"></span> Outcomes</a>
+                        </li>
+                    </ul>
+                    <!-- second-level-items -->
+                </li>
+            </ul>
+            <!-- end side-menu -->
+        </div>
+        <!-- end sidebar-collapse -->
+    </nav>
+
+    <!-- end navbar side -->
+    <!--  page-wrapper -->
+    <div id="page-wrapper" style="margin-top:-55px; padding:0!important;">
+        <div ng-view></div>
+    </div>
+    <div class="bottom-menu">
+        <div><a href="#/dhis2_home"><i class="fa fa-table fa-fw"></i> Apps</a></div>
+        <div><a href="#/about"><i class="fa fa-exclamation-circle fa-fw"></i> About</a></div>
+    </div>
+    <!-- end page-wrapper -->
+</div>
+<!-- end wrapper -->
+<!-- Core Scripts - Include with every page -->
+<script src="assets/plugins/jquery-1.10.2.js"></script>
+<script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
+<script src="assets/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="assets/plugins/pace/pace.js"></script>
+<script src="assets/scripts/siminta.js"></script>
+<script src="assets/plugins/highcharts.js"></script>
+<script src="assets/plugins/highcharts-more.js"></script>
+<script src="assets/plugins/exporting.js"></script>
+<!-- Page-Level Plugin Scripts-->
+<!--<script type="text/javascript" src="js/custom/charts/highchartcolumn.js"></script>-->
+<script src="assets/plugins/morris/raphael-2.1.0.min.js"></script>
+<script src="assets/plugins/morris/morris.js"></script>
+<script type="text/javascript" src="js/lib/angular.min.js"></script>
+<script type="text/javascript" src="js/lib/angular-route.min.js"></script>
+<script type="text/javascript" src="js/lib/angular-resource.js"></script>
+<script type="text/javascript" src="js/custom/AppVariables.js"></script>
+<script type="text/javascript" src="js/custom/utils/utils.js"></script>
+<script type="text/javascript" src="js/custom/charts/barchart.js"></script>
+<script type="text/javascript" src="js/custom/charts/piechart.js"></script>
+<script type="text/javascript" src="js/custom/charts/timeserieschart.js"></script>
+<script type="text/javascript" src="js/custom/charts/pivotchart.js"></script>
+<script type="text/javascript" src="js/custom/charts/rosechart.js"></script>
+<script type="text/javascript" src="js/custom/charts/mapchart.js"></script>
+<script type="text/javascript" src="js/custom/utils/dashletgenerator.js"></script>
+<script type="text/javascript" src="js/custom/services/services.js"></script>
+<script type="text/javascript" src="js/custom/services/AlertServices.js"></script>
+<script type="text/javascript" src="js/custom/services/ExploreServices.js"></script>
+<script type="text/javascript" src="js/custom/controllers/ExploreControllers.js"></script>
+<script type="text/javascript" src="js/custom/controllers/AlertController.js"></script>
+<script type="text/javascript" src="js/custom/controllers/NationalControllers.js"></script>
+<script type="text/javascript" src="js/custom/rbcapp.js"></script>
+<script type="text/javascript" src="js/custom/charts/highchart_chart.js"></script>
+<script type="text/javascript" src="js/custom/charts/highchartgenerate.js"></script>
+</body>
+</html>

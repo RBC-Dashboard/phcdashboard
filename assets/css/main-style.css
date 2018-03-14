@@ -1,0 +1,250 @@
+
+/*====================================
+ Free To Use For Personal And Commercial Usage
+Author: http://binarytheme.com
+ Share Us if You Like our work 
+ Enjoy Our Codes For Free always.
+======================================*/
+
+/* user image section */
+.user-section {
+    margin-top:20px;
+    font-size:22px;
+   background-color: rgba(70, 255, 238, 0.72);
+}
+.user-section-inner {
+    height: 65px;
+width: 65px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+overflow: hidden;
+display: inline-block;
+float: left;
+margin-right: 15px;
+margin-top: 20px;
+}
+.user-section-inner img {
+        margin-left:10px;
+        width:55px;
+        height:60px;    
+}
+.user-info {
+    display: block;
+    color:#000!important;
+display: inline-block;
+padding: 15px;
+margin-bottom: 0px
+}
+.user-text-online {
+    font-size:18px;
+    color:#fff
+}
+.user-circle-online {
+    width: 15px!important;
+    height: 15px!important;
+}
+
+/* side-menu section */
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color:#31859C;
+}
+
+.nav-second-level{
+    text-align: left;
+    margin-left: 15px;
+}
+.navbar-top-links  .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: #75C5B8;
+}
+.navbar-top-links > li > a {
+color: #FFFFFF;
+}
+.nav > li > a {
+padding: 20px 15px;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.dboard-level1{
+    background-color: #31859C;
+}
+.dboard-level2{
+    background-color: #215968;
+}
+
+.dboard-level3{
+    background-color: #215968;
+}
+
+#side-menu {
+     background-color: #215968;
+}
+#menu-item {
+    color:#fff;
+    border-bottom: 1px solid #84B899 !important;
+    height: 55px;
+}
+.dboard-center{
+     text-align: center;
+}
+/* custon icons for DBoard */
+.dboard-dashboard {
+    content:url("../../img/icons/dashboard.png");
+    width: 1.2857142857142858em;
+}
+.dboard-national{
+    content:url("../../img/icons/home.png");
+    height: 15px;
+}
+.dboard-system{
+    content:url("../../img/icons/system.png");
+    height: 15px;
+}
+.dboard-input {
+    content:url("../../img/icons/input.png");
+    height: 15px;
+}
+.dboard-service-delivery {
+    content:url("../../img/icons/service-delivery.png");
+    height: 15px;
+}
+.dboard-coverage{
+    content:url("../../img/icons/coverage.png");
+    height: 15px;
+}
+.dboard-outcomes{
+    content:url("../../img/icons/outcomes.png");
+    height: 15px;
+}
+
+/* end custon icons for DBoard */
+
+/* Side-menu controls color of menu items */
+ #side-menu a {
+        color:#fff;
+        height: 40px;
+        }
+        .selected {
+            background-color:rgb(83, 163, 163);
+        }
+/* back colors */
+        .blue {
+            background-color:rgb(113, 159, 241);
+        }
+         .green {
+            background-color:rgb(144, 236, 192);
+        }
+          .red {
+            background-color:rgb(255, 102, 133);
+        }
+        .yellow {
+            background-color:rgb(237, 253, 46);
+        }
+
+  /* No border */
+.no-boder {
+    border:0px solid #5bc0de !important;
+}
+/* tap nvbar Section */
+
+#navbar {
+   background-color: rgba(4, 22, 86, 0.68);
+}
+
+.navbar-brand {
+    width: 100%;
+    margin-left: auto; 
+    margin-right: auto;   
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.top-label {
+position: absolute;
+top: 50%;
+right: 50%;
+margin-top: -24px;
+margin-right: -24px;
+}
+
+/*large font*/
+.large-font {
+    font-size:18px;
+}
+
+.body-Login-back {
+    background-color:#84B899;
+}
+
+.margin-tips {
+    margin:5px;
+}
+.navbar-default {
+border-color: #27A6BE;
+}
+/*media queries*/
+
+@media(min-width:768px) 
+{
+    #page-wrapper {
+        position: inherit;
+        margin: 0 0 0 200px;
+        padding: 0 30px;
+        min-height: 1000px;
+    }
+}
+
+@media(max-width:768px) {
+#wrapper {
+    margin-top:140px!important;
+}
+}
+
+/* styles for content cal */
+.row {
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.hidden{
+ overflow: hidden;
+}
+
+
+/* styles for TEMPLATE 1*/
+.col-t-nd1 {
+    width: 100%;
+    height: 354px;
+    margin-bottom: 4px;
+    margin-right: 5px
+}
+.col-t-nd2 {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 4px;
+}
+.col-t-nd3 {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 4px;
+}
+
+/* styles for Template 2 */
+.col1-t2-upper {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 4px;
+    margin-right: 5px
+}
+.col2-t2-upper {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 4px;
+    margin-right: 5px
+}
+.col2-t2-bottom {
+    height: 200px;
+    width: 100%;
+    margin-right: 5px
+}

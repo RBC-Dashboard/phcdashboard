@@ -1,0 +1,41 @@
+{
+  "dashlets": [
+    {
+      "id": "1",
+      "title": "Stock level at district pharmacies for TB tracer drugs",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:CkZemJwCjaY;lzTZpvSOhpa;B5we1J65yM0;IICFRxhEnPP;S8R92L050Ic;h3Xq3ahEYXY;QrKPP3xvosw;VB9QcuqSwnW;zAFNP5XTkuI;y0B9TaG5LG7;r3xRSOos9g0;WUSUbdHGWZ4&dimension=ou\\:LEVEL-3&filter=pe\\:LAST_QUARTER",
+      "chartType": "table"
+    },
+    {
+      "id": "2",
+      "title": "Stock out at CDT - health centre",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:psFkwmlxKjI&dimension=pe\\:LAST_4_QUARTERS&filter=ou\\:LEVEL-1",
+      "chartType": "Line"
+    },
+    {
+      "id": "3",
+      "title": "Stockout at CDT - hospital",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:psFkwmlxKjI&dimension=pe\\:LAST_4_QUARTERS&filter=ou\\:LEVEL-1",
+      "chartType": "Line"
+    },
+    {
+      "id": "4",
+      "title": "Stock level of TB tracer drugs in MPPD warehouse",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:CkZemJwCjaY;lzTZpvSOhpa;B5we1J65yM0;IICFRxhEnPP;S8R92L050Ic;h3Xq3ahEYXY;QrKPP3xvosw;VB9QcuqSwnW;zAFNP5XTkuI;y0B9TaG5LG7;r3xRSOos9g0;WUSUbdHGWZ4&dimension=ou\\:LEVEL-3&filter=pe\\:LAST_QUARTER",
+      "chartType": "bar"
+    },
+    {
+      "id": "5",
+      "title": "Stock out at CDT - hospital MDR-TB Wards",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:wOVeaoBHxk7&dimension=pe\\:LAST_YEAR&filter=ou\\:LEVEL-1",
+      "chartType": "table"
+    },
+    {
+      "id": "6",
+      "title": "Stock out at MPPD national warehouse",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:Ok2G7kDN3oI;FkxCuH5DGrA&dimension=pe\\:THIS_MONTH&filter=ou\\:LEVEL-1",
+      "chartType": "table"
+    }
+  ]
+}
+

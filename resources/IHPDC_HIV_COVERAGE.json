@@ -1,0 +1,29 @@
+{
+  "dashlets": [
+    {
+      "id": "1",
+      "title": "Percent of HIV positive women who delivered at a health facility",
+      "link": "analytics.json?dimension=dx\\:lBwHq99UNwD;Cyai2ELIIB7;kkAUgKEL5Y7&dimension=pe\\:LAST_YEAR&filter=ou\\:LEVEL-1",
+      "chartType": "bar"
+    },
+    {
+      "id": "2",
+      "title": "Percent of HIV positive adults and children receiving ART",
+      "link": "analytics.json?dimension=dx\\:rlL15PvDkYy;AuGkfbrEpZQ;fDa1Y18ms5Y;SYRGn8IWKRR;CWSvQRgvCe3&dimension=pe\\:LAST_YEAR&filter=ou\\:LEVEL-1",
+      "chartType": "line"
+    },
+    {
+      "id": "3",
+      "title": "Percent of HIV positive pregnant women who recieved ART to reduce risk of mother to child transmission",
+      "link": "analytics.json?dimension=dx\\:svj927QZPsK&dimension=pe\\:LAST_12_MONTHS&filter=ou\\:LEVEL-1",
+      "chartType": "line"
+    },
+    {
+      "id": "4",
+      "title": "Coverage of ARC compared with % who are still on ARC 12 months following",
+      "link": "analytics.json?dimension=dx\\:CkZemJwCjaY;lzTZpvSOhpa;B5we1J65yM0;IICFRxhEnPP;S8R92L050Ic;h3Xq3ahEYXY;QrKPP3xvosw;VB9QcuqSwnW;zAFNP5XTkuI&dimension=pe\\:LAST_12_MONTHS&filter=ou\\:LEVEL-3",
+      "chartType": "Line"
+    }
+  ]
+}
+

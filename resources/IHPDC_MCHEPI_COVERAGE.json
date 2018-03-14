@@ -1,0 +1,29 @@
+{
+  "dashlets": [
+    {
+      "id": "1",
+      "title": "Coverage: Percentage of districts or equivalent administrative areas with Penta3 coverage >= 80% (target = 90%)",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:lBwHq99UNwD;Cyai2ELIIB7;kkAUgKEL5Y7&dimension=pe\\:LAST_YEAR&filter=ou\\:LEVEL-1",
+      "chartType": "donut"
+    },
+    {
+      "id": "2",
+      "title": "Coverage: Percentage of districts or equivalent administrative areas with Penta3 coverage >= 80% (target = 90%) ",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:rlL15PvDkYy;AuGkfbrEpZQ;fDa1Y18ms5Y;SYRGn8IWKRR;CWSvQRgvCe3&dimension=pe\\:LAST_YEAR&filter=ou\\:LEVEL-1",
+      "chartType": "line"
+    },
+    {
+      "id": "3",
+      "title": "Measles & Rubella (MR) immunization coverage (1st dose and 2nd dose) % vaccinated measles <1 yr",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:svj927QZPsK&dimension=pe\\:LAST_12_MONTHS&filter=ou\\:LEVEL-1",
+      "chartType": "line"
+    },
+    {
+      "id": "4",
+      "title": "Effective Coverage: Percent of fully immunized children in the community",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:CkZemJwCjaY;lzTZpvSOhpa;B5we1J65yM0;IICFRxhEnPP;S8R92L050Ic;h3Xq3ahEYXY;QrKPP3xvosw;VB9QcuqSwnW;zAFNP5XTkuI&dimension=pe\\:LAST_12_MONTHS&filter=ou\\:LEVEL-3",
+      "chartType": "Line"
+    }
+  ]
+}
+

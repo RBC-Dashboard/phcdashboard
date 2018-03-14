@@ -1,0 +1,41 @@
+{
+  "dashlets": [
+    {
+      "id": "1",
+      "title": "Succesful Treatment: Treatment success rate for bacteriologically confirmed new and relapse TB cases [IMHIGO]",
+      "link": "https://dhis2.jsi.com/dss/api/maps/qNJbH7bqRts/data",
+      "exploreLink": "https://dhis2.jsi.com/dss/dhis-web-mapping/index.html?id=qNJbH7bqRts",
+      "chartType": "map"
+    },
+    {
+      "id": "3",
+      "title": "Notification Rate of all TB cases (all form/100,000 hab)",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:psFkwmlxKjI&dimension=pe\\:LAST_4_QUARTERS&filter=ou\\:LEVEL-1",
+      "chartType": "line"
+    },
+    {
+      "id": "4",
+      "title": "Successful treatment: % of clinically diagnosed TB cases successfully treated",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:flj6nKxKhf4;XWegCdrhuWn&dimension=pe\\:LAST_5_YEARS&filter=ou\\:LEVEL-1",
+      "chartType": "map"
+    },
+    {
+      "id": "2",
+      "title": "Succesful Treatment: Treatment success rate for bacteriologically confirmed new and relapse TB cases [IMHIGO]",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:qcDuvv8bUNf;hDBEi2bF6nS&dimension=pe\\:LAST_5_YEARS&filter=ou\\:LEVEL-1",
+      "chartType": "bar"
+    },
+    {
+      "id": "5",
+      "title": "Successful Treatment: Treatment success rate for bacteriologically confirmed new and relapse TB cases",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:UipQPqzl8JJ;LwWTBPXHfFR;VfzC8s6TUrs&dimension=pe\\:LAST_12_MONTHS&filter=ou\\:LEVEL-1",
+      "chartType": "bar"
+    },
+    {
+      "id": "6",
+      "title": "Notification Rate: Proportion of TB cases notified among high-risk groups [IMHIGO]",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:ofagyDoyQA2&dimension=pe\\:LAST_12_MONTHS&filter=ou\\:LEVEL-1",
+      "chartType": "line"
+    }
+  ]
+}

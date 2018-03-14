@@ -1,0 +1,34 @@
+{
+  "dashlets": [
+    {
+      "id": "3",
+      "title": "Combined budget Execution",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:uIIG1x8zrbl.dDzmHStw6EV;iZvoVGoaISy.dDzmHStw6EV&dimension=pe\\:LAST_QUARTER&filter=ou\\:LEVEL-1",
+      "chartType": "Stackedv"
+    },
+    {
+      "id": "5",
+      "title": "Orgnaizational Deadlines",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:WTREyXnOI59;Iv924jF5tHV;svj927QZPsK&dimension=pe\\:LAST_QUARTER&filter=ou\\:LEVEL-1",
+      "chartType": "table"
+    },
+    {
+      "id": "4",
+      "title": "Share of overall budget from Ordinary vs External Partner Funds",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:WTREyXnOI59&dimension=pe\\:LAST_QUARTER&filter=ou\\:LEVEL-1",
+      "chartType": "stackedv"
+    },
+    {
+      "id": "2",
+      "title": "Budget Execution for External Partners Budget",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:uIIG1x8zrbl;iZvoVGoaISy;iZvoVGoaISy.dDzmHStw6EV;uIIG1x8zrbl.dDzmHStw6EV&dimension=pe\\:LAST_4_QUARTERS&filter=ou\\:LEVEL-1",
+      "chartType": "bar"
+    },
+    {
+      "id": "1",
+      "title": "Budget Execution for Ordinary Budget",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:iZvoVGoaISy.dDzmHStw6EV;uIIG1x8zrbl.dDzmHStw6EV&dimension=pe\\:LAST_4_QUARTERS&filter=ou\\:LEVEL-1",
+      "chartType": "bar"
+    }
+  ]
+}

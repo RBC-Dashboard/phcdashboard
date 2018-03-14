@@ -1,0 +1,23 @@
+{
+  "dashlets": [
+    {
+      "id": "1",
+      "title": "Malaria tracer items - Stockout",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:CkZemJwCjaY;lzTZpvSOhpa;B5we1J65yM0;IICFRxhEnPP;S8R92L050Ic;h3Xq3ahEYXY;QrKPP3xvosw;VB9QcuqSwnW;zAFNP5XTkuI;y0B9TaG5LG7;r3xRSOos9g0;WUSUbdHGWZ4&dimension=ou\\:LEVEL-3&filter=pe\\:LAST_QUARTER",
+      "chartType": "table"
+    },
+    {
+      "id": "2",
+      "title": "Percentage of health facilities with stockout of RDT and/or ACT",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:psFkwmlxKjI&dimension=pe\\:LAST_4_QUARTERS&filter=ou\\:LEVEL-1",
+      "chartType": "map"
+    },
+    {
+      "id": "3",
+      "title": "Stockout at national level MPPD",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:psFkwmlxKjI&dimension=pe\\:LAST_4_QUARTERS&filter=ou\\:LEVEL-1",
+      "chartType": "table"
+    }
+  ]
+}
+

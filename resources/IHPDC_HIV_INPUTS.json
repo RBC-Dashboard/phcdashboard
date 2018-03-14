@@ -1,0 +1,28 @@
+{
+  "dashlets": [
+    {
+      "id": "1",
+      "title": "Stockout/Shortage/Stocked at Health Center",
+      "link": "analytics.json?dimension=dx\\:CkZemJwCjaY;lzTZpvSOhpa;B5we1J65yM0;IICFRxhEnPP;S8R92L050Ic;h3Xq3ahEYXY;QrKPP3xvosw;VB9QcuqSwnW;zAFNP5XTkuI;y0B9TaG5LG7;r3xRSOos9g0;WUSUbdHGWZ4&dimension=ou\\:LEVEL-3&filter=pe\\:LAST_QUARTER",
+      "chartType": "table"
+    },
+    {
+      "id": "2",
+      "title": "Facility at risk of stock out of any tracer item",
+      "exploreLink": "https://dhis2.jsi.com/dss/dhis-web-mapping/index.html?id=qNJbH7bqRts",
+      "chartType": "map"
+    },
+    {
+      "id": "3",
+      "title": "Stockout/Shortage/Stocked at District Pharmacy",
+      "link": "analytics.json?dimension=dx\\:psFkwmlxKjI&dimension=pe\\:LAST_4_QUARTERS&filter=ou\\:LEVEL-1",
+      "chartType": "table"
+    },
+    {
+      "id": "4",
+      "title": "Stockout/Shortage/Stocked at MPPD Warehouse",
+      "link": "analytics.json?dimension=dx\\:CkZemJwCjaY;lzTZpvSOhpa;B5we1J65yM0;IICFRxhEnPP;S8R92L050Ic;h3Xq3ahEYXY;QrKPP3xvosw;VB9QcuqSwnW;zAFNP5XTkuI;y0B9TaG5LG7;r3xRSOos9g0;WUSUbdHGWZ4&dimension=ou\\:LEVEL-3&filter=pe\\:LAST_QUARTER",
+      "chartType": "table"
+    }
+  ]
+}

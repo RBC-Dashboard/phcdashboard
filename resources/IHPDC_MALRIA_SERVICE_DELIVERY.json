@@ -1,0 +1,40 @@
+{
+  "dashlets": [
+    {
+      "id": "1",
+      "title": "Timely implementation of IRS operations",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:UPIpehsA0Yj;GybjvT9KoEf;zntsJHtMx89;zvJcY8lsapi;qcDuvv8bUNf&dimension=pe\\:THIS_YEAR&filter=ou\\:LEVEL-1",
+      "chartType": "map"
+    },
+    {
+      "id": "2",
+      "title": "Number of LLINs distributed",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:rr6oJuNVlrM;bqe13ZJ8xaR&dimension=pe\\:THIS_MONTH&filter=ou\\:LEVEL-1",
+      "chartType": "Line"
+    },
+    {
+      "id": "4",
+      "title": "HR reporting on time",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:svj927QZPsK&dimension=pe\\:LAST_12_MONTHS&filter=ou\\:LEVEL-1",
+      "chartType": "bar"
+    },
+    {
+      "id": "5",
+      "title": "Percent ACT and RDT that pass bi-annual quality control",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:tjlYrEQqzoZ;a6gh28YY0hF;vTIwu5Erpdg;TAmgsTizYJA&dimension=pe\\:LAST_12_MONTHS&filter=ou\\:LEVEL-1",
+      "chartType": "bar"
+    },
+    {
+      "id": "3",
+      "title": "Number of anti-malrial drugs used (Coartem 6x1 + 6x2 + 6x3 + 6x4",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:pjAfNmRfsD7;EImTwU6yMfv;Kjlbc1JdPza&dimension=pe\\:THIS_MONTH&filter=ou\\:LEVEL-1",
+      "chartType": "bar"
+    },
+    {
+      "id": "6",
+      "title": "HFs Submitting Complete Report of Cases and Deaths",
+      "link": "https://dhis2.jsi.com/dss/api/analytics.json?dimension=dx\\:pjAfNmRfsD7;EImTwU6yMfv;Kjlbc1JdPza&dimension=pe\\:THIS_MONTH&filter=ou\\:LEVEL-1",
+      "chartType": "bar"
+    }
+  ]
+}
