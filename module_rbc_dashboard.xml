@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_rbc_dashboard" default="compile.module.rbc_dashboard">
+    <dirname property="module.rbc_dashboard.basedir" file="${ant.file.module_rbc_dashboard}"/>
+
+    <property name="module.jdk.home.rbc_dashboard" value="${project.jdk.home}"/>
+    <property name="module.jdk.bin.rbc_dashboard" value="${project.jdk.bin}"/>
+    <property name="module.jdk.classpath.rbc_dashboard" value="${project.jdk.classpath}"/>
+
+    <property name="compiler.args.rbc_dashboard" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+
+    <property name="rbc_dashboard.output.dir" value="${module.rbc_dashboard.basedir}/out/production/rbc dashboard"/>
+    <property name="rbc_dashboard.testoutput.dir" value="${module.rbc_dashboard.basedir}/out/test/rbc dashboard"/>
+
+    <path id="rbc_dashboard.module.bootclasspath">
+        <!-- Paths to be included in compilation bootclasspath -->
+    </path>
+
+    <path id="rbc_dashboard.module.production.classpath"/>
+
+    <path id="rbc_dashboard.runtime.production.module.classpath">
+        <pathelement location="${rbc_dashboard.output.dir}"/>
+    </path>
+
+    <path id="rbc_dashboard.module.classpath">
+        <pathelement location="${rbc_dashboard.output.dir}"/>
+    </path>
+
+    <path id="rbc_dashboard.runtime.module.classpath">
+        <pathelement location="${rbc_dashboard.testoutput.dir}"/>
+        <pathelement location="${rbc_dashboard.output.dir}"/>
+    </path>
+
+
+    <patternset id="excluded.from.module.rbc_dashboard">
+        <patternset refid="ignored.files"/>
+    </patternset>
+
+    <patternset id="excluded.from.compilation.rbc_dashboard">
+        <patternset refid="excluded.from.module.rbc_dashboard"/>
+    </patternset>
+
+
+    <target name="compile.module.rbc_dashboard"
+            depends="compile.module.rbc_dashboard.production,compile.module.rbc_dashboard.tests"
+            description="Compile module rbc dashboard"/>
+
+    <target name="compile.module.rbc_dashboard.production" depends="register.custom.compilers"
+            description="Compile module rbc dashboard; production classes"/>
+
+    <target name="compile.module.rbc_dashboard.tests"
+            depends="register.custom.compilers,compile.module.rbc_dashboard.production"
+            description="compile module rbc dashboard; test classes" unless="skip.tests"/>
+
+    <target name="clean.module.rbc_dashboard" description="cleanup module">
+        <delete dir="${rbc_dashboard.output.dir}"/>
+        <delete dir="${rbc_dashboard.testoutput.dir}"/>
+    </target>
+</project>
